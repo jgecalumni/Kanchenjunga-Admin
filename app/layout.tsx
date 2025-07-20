@@ -10,9 +10,9 @@ import { Toaster } from "@/components/ui/sonner";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "StudentStay - Admin Dashboard",
+	title: "Kanchenjunga - Admin Dashboard",
 	description:
-		"Modern student accommodation management system for administrators",
+		"Kanchenjunga accommodation management system for administrators",
 };
 
 export default function RootLayout({
