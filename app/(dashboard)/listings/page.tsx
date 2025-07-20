@@ -537,7 +537,7 @@ const filteredListings = listingData.filter((listing) => {
 															key={index}
 															className="h-8 w-8 rounded border-2 border-background overflow-hidden">
 															<img
-																src={`http://localhost:5000${image.url}` || ""}
+																src={`${process.env.NEXT_PUBLIC_BASE_URL}${image.url}` || ""}
 																alt={`${listing.title} image ${index + 1}`}
 																className="h-full w-full object-cover"
 															/>
@@ -660,7 +660,7 @@ const filteredListings = listingData.filter((listing) => {
 												key={index}
 												className="rounded-lg border overflow-hidden">
 												<img
-													src={`http://localhost:5000${image.url}` || ""}
+													src={`${process.env.NEXT_PUBLIC_BASE_URL}${image.url}` || ""}
 													alt={`${selectedListing.title} image ${index + 1}`}
 													className="w-full h-full object-cover"
 												/>
