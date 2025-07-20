@@ -76,7 +76,7 @@ export function ImageUpload({
               className="relative group aspect-square rounded-lg border border-border overflow-hidden"
             >
               <img
-                src={`http://localhost:5000${image.url}`}
+                src={`${process.env.NEXT_PUBLIC_BASE_URL}${image.url}`}
                 alt={`Existing room image ${index + 1}`}
                 className="w-full h-full object-cover"
               />
